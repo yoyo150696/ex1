@@ -13,5 +13,10 @@ class ConcreteMemberTest {
 
         member.update(undoableStringBuilder);
         Assertions.assertNotNull(((ConcreteMember)member).us);
+        
+        System.out.println(JvmUtilities.jvmInfo());
+        System.out.println(JvmUtilities.objectFootprint(member));
+        System.out.println(JvmUtilities.objectTotalSize(member));
+        System.out.println(JvmUtilities.memoryStats(member));
     }
 }
